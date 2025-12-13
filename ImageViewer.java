@@ -18,6 +18,8 @@ import java.util.Iterator;
  * 
  * @author Michael Kölling and David J. Barnes.
  * @version 3.1
+ * 
+ * edited by Franco Acosta
  */
 public class ImageViewer
 {
@@ -255,6 +257,16 @@ public class ImageViewer
         filterList.add(new GrayScaleFilter("Grayscale"));
         filterList.add(new EdgeFilter("Edge Detection"));
         filterList.add(new FishEyeFilter("Fish Eye"));
+        
+        //Added filters:
+        filterList.add(new RedChannelFilter("Red Channel"));
+        filterList.add(new GreenChannelFilter("Green Channel"));
+        filterList.add(new BlueChannelFilter("Blue Channel"));
+        filterList.add(new RedTintFilter("Red Tint"));
+        filterList.add(new GreenTintFilter("Green Tint"));
+        filterList.add(new BlueTintFilter("Blue Tint"));
+        
+        //Warhol filters:
        
         return filterList;
     }
